@@ -1,69 +1,204 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Base Styles */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #fdf2e9;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #1f2937;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url('/images/hero.png') center/cover no-repeat;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1.5px);
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-overlay p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.hero-button {
+  background: #a91e22;
+  color: white;
+  padding: 0.75rem 1.75rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #7a1417;
+}
+
+/* Info Section */
+.info {
+  background: #ffeecf;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.info-text {
+  max-width: 480px;
+}
+
+.info-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-text p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.info-img {
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Topics Section */
+.topics {
+  background: #fdf2e9;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.topics h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Georgia', serif;
+  color: #2e2e2e;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.topic-card {
+  background-color: #fff9ed;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.topic-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.topic-card h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #1f2937;
+}
+
+.topic-card p {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* Nav Bar */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.main-nav a {
+  color: #374151;
+  text-decoration: none;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: all 0.2s ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.main-nav a:hover,
+.main-nav .nav-active {
+  color: #be123c;
+  border-bottom: 2px solid #be123c;
+  padding-bottom: 2px;
 }
