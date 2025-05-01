@@ -29,7 +29,7 @@ export default function App() {
         <Route path="/solutions" element={<Solutions />} />
       </Routes>
 
-      <footer className="main-footer">
+      <footer className="footer">
         <p>&copy; {new Date().getFullYear()} Wildfire Awareness. All rights reserved.</p>
         <div className="footer-links">
           <a href="#">About</a>
