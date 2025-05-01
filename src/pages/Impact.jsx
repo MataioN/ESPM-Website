@@ -1,5 +1,5 @@
+import { Home, Heart, DollarSign, Users } from 'lucide-react';
 
-import { Home, Heart, Lungs, Cloud, DollarSign, Users } from 'lucide-react';
 
 export default function Impact() {
   const impactCategories = [
