@@ -1,0 +1,235 @@
+/* Page background and header */
+.history-page {
+    font-family: 'Playfair Display', serif;
+    background-color: #ffe8bf;
+    color: #1f1f1f;
+    padding-bottom: 4rem;
+  }
+  
+  .header-section {
+    background: url('/images/history-header.png') center/cover no-repeat;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-overlay {
+    background: transparent;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #4b2e2a;
+  }
+  
+  .header-overlay p {
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    color: #6b3a2f;
+  }
+  
+  /* Filter buttons */
+  .filter-buttons {
+    transform: translateX(-0.5%);
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+    top: 3.5rem;
+    z-index: 5;
+  }
+  
+  .filter-buttons button {
+    background-color: #fef8f3;
+    color: #5e3a2f;
+    border: 1px solid #fdd9a0;
+    padding: 0.6rem 1.4rem;
+    font-weight: 600;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-buttons button.active,
+  .filter-buttons button:hover {
+    color: #be123c;
+    font-weight: 600;
+  }
+  
+  /* Timeline layout */
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: block; /* key for overlap */
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: #c7663c;
+    z-index: 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+  
+  .timeline-item + .timeline-item {
+    margin-top: -5rem; /* causes overlap */
+  }
+  
+  .timeline-content {
+    position: relative;
+    background-color: #fff8eb;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    width: 44%;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    left: 50%;
+    transform: translateX(10%);
+    z-index: 2;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    left: 50%;
+    transform: translateX(-110%);
+    z-index: 1;
+  }
+  
+  .timeline-content img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-content h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4b2e2a;
+    margin-bottom: 0.75rem;
+  }
+  
+  .timeline-content p {
+    font-size: 0.95rem;
+    color: #4b3a2f;
+    line-height: 1.5;
+  }
+  
+  .timeline-content .tag {
+    display: inline-block;
+    background-color: #fbd5a6;
+    color: #8b4513;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    margin-top: 0.75rem;
+  }
+  
+  /* Dot and connector */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: #c7663c;
+    border: 3px solid #ffe8bf;
+    border-radius: 50%;
+    z-index: 3;
+  }
+  
+  .timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    width: 40px;
+    background-color: #c7663c;
+    z-index: 1;
+  }
+  
+  .timeline-item:nth-child(odd)::after {
+    left: 50%;
+  }
+  
+  .timeline-item:nth-child(even)::after {
+    right: 50%;
+  }
+  
+  /* Context section */
+  .history-context {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff5e8;
+    border-left: 6px solid #c7663c;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .history-context h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #7c2d12;
+    margin-bottom: 1rem;
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 12px;
+    }
+  
+    .timeline-item::before {
+      left: 12px;
+    }
+  
+    .timeline-item::after {
+      display: none;
+    }
+  
+    .timeline-content {
+      width: calc(100% - 2rem);
+      left: 0 !important;
+      right: auto !important;
+      margin-left: 2rem;
+      transform: none !important;
+      top: 0 !important;
+    }
+  
+    .timeline-item + .timeline-item {
+      margin-top: 2rem;
+    }
+  }
+  
