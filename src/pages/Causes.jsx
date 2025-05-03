@@ -24,7 +24,8 @@ export default function Causes() {
         "High winds that can cause fires to spread at rapid rates",
         "Lightning strikes, which are a major natural cause of wildfires",
         "Drought cycles that create extremely dry vegetation",
-        "Low humidity conditions that make vegetation more flammable"
+        "Low humidity conditions that make vegetation more flammable",
+        "Santa Ana winds are a very primary cause for wildfire causes in Southern California"
       ]
     },
     {
@@ -79,7 +80,7 @@ export default function Causes() {
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <div className="image-wrapper">
             <img 
-              src="/api/placeholder/400/400" 
+              src="/public/images/dead_trees.webp" 
               alt="Dry forest conditions" 
               className="rounded-lg"
             />
@@ -126,11 +127,11 @@ export default function Causes() {
         <p>
           It's important to understand that these causes don't exist in isolation. Climate change exacerbates the effects 
           of poor forest management; human activities become more dangerous in extreme weather conditions; and land use 
-          changes can affect both natural fire regimes and human exposure to wildfire risk.
+          changes can affect both natural fire regimes and human exposure to wildfire risk. Many times, a wildfire is not caused by only one of these, but through a combination of causes coming together. We should be more attentive and knowledgeable on causes of wildfires so that we may be able to prevent them from ever starting in the first place.
         </p>
         <p>
           Addressing the wildfire crisis requires a holistic approach that considers all these interconnected factors
-          and develops comprehensive strategies for mitigation and adaptation.
+          and develops comprehensive strategies for mitigation and adaptation. If we are able to understand how these factors work together to cause wildfires, we are able to put measures in place to hopefully prevent or mitigate them. 
         </p>
       </section>
     </div>

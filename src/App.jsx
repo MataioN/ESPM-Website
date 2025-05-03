@@ -30,7 +30,7 @@ export default function App() {
       </Routes>
 
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Wildfire Awareness. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Southern California Wildfires. All rights reserved.</p>
         <div className="footer-links">
           <a href="#">About</a>
           <a href="#">Contact</a>
