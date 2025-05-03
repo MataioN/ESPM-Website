@@ -24,9 +24,10 @@ h1, h2 {
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
-  background: url('/images/hero.png') center/cover no-repeat;
+  background: url('/images/hero.png') center / cover no-repeat;
+  background-position: center top 70%;
 }
 
 .hero-overlay {
@@ -38,12 +39,11 @@ h1, h2 {
   justify-content: flex-start;  /* align top */
   text-align: center;
   height: 100%;
-  padding-top: 14rem;
+  padding-top: 10rem;
   padding-left: 2rem;
   padding-right: 2rem;
   color: white;
   background: transparent;
-  backdrop-filter: blur(2px);
 }
 
 
@@ -92,7 +92,7 @@ h1, h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 2rem;
   gap: 2rem;
 }
 
@@ -188,12 +188,12 @@ h1, h2 {
 
 /* Footer */
 .footer {
-  background-color: #f3f4f6;
+  background-color: #fdf2e9;
   color: #4b5563;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem;
+  padding-top: 1rem;
   font-size: 0.875rem;
-  margin-top: 4rem;
 }
 
 .footer-links {
@@ -235,28 +235,36 @@ h1, h2 {
 
 /* Nav Bar */
 .main-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
-  background-color: #fdf2e9;
   position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 0.6rem 2rem;
+  border-radius: 999px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1rem;
 }
 
 .main-nav a {
-  color: #374151;
   text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  color: #432818;
+  font-weight: 600; /* make it semi-bold */
+  transition: color 0.2s ease;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.1rem; /* increase font size */
 }
 
-.main-nav a:hover,
+.main-nav a:hover {
+  color: #be123c;
+}
+
 .main-nav .nav-active {
   color: #be123c;
-  border-bottom: 2px solid #be123c;
-  padding-bottom: 2px;
+  font-weight: 600;
+  text-decoration: underline;
 }
