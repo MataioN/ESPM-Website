@@ -1,0 +1,203 @@
+/* Page Base */
+.solutions-page {
+    font-family: 'Georgia', serif;
+    background-color: #fdf2e9;
+    color: #1a1a1a;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4rem;
+  }
+  
+  /* Header with full image shown */
+  .solutions-header {
+    position: relative;
+    width: 100%;
+    padding-top: calc(93.5%/ 3);
+    background: url('/images/solutions-header.png') center center no-repeat;
+    background-size: cover;
+    background-color: #fef3e7;
+    margin: 0;
+  }
+  
+  .solutions-header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
+  }
+  
+  .solutions-header h1 {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0.75rem;
+  }
+  
+  .solutions-header p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #f9f9f9;
+    max-width: 720px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Solution Blocks */
+  .solutions-content {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    overflow: visible;
+  }
+  
+  .solution-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: #fff;
+    border: 1px solid #eee0d2;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .solution-icon-wrapper {
+    flex-shrink: 0;
+    background-color: #fff1e0;
+    border-radius: 50%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .solution-icon {
+    color: #dc7633;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .solution-block h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4a2f1c;
+  }
+  
+  .solution-block p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .solution-stagger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    overflow: visible;
+    z-index: 1;
+    transform-origin: center;
+  }
+  
+  .solution-stagger.left {
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 800px;
+  }
+  
+  .solution-stagger.right {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 800px;
+  }
+  
+  .solution-stagger-text {
+    flex: 1;
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+  }
+  
+  .solution-stagger-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #4a2f1c;
+  }
+  
+  .solution-stagger-text p {
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Image outside the card */
+  .solution-stagger-image {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .solution-stagger.left .solution-stagger-image {
+    right: -300px;
+  }
+  
+  .solution-stagger.right .solution-stagger-image {
+    left: -300px;
+  }
+  
+  /* On hover: animate float */
+  .solution-stagger-image:hover {
+    transform: translateY(-50%) scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .solutions-header h1 {
+      font-size: 2.25rem;
+    }
+  
+    .solutions-header p {
+      font-size: 1rem;
+    }
+    .solution-stagger {
+        flex-direction: column !important;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+    
+    .solution-stagger-image {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .solution-stagger.left .solution-stagger-image,
+    .solution-stagger.right .solution-stagger-image {
+        left: auto;
+        right: auto;
+    }
+  }
+  
