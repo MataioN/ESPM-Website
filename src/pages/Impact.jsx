@@ -158,14 +158,14 @@ export default function Impact() {
             <h4>Vulnerable Populations</h4>
             <p>
               Low-income communities, elderly populations, and those with limited English proficiency often face greater challenges 
-              during evacuation and recovery, with fewer resources to rebuild...
+              during evacuation and recovery, with fewer resources to rebuild.
             </p>
           </div>
           <div className="recovery-card">
             <h4>Recovery Inequality</h4>
             <p>
               Studies show that wealthier communities tend to recover more quickly from wildfire disasters, with better access to 
-              insurance, loans, and other resources essential for rebuilding...
+              insurance, loans, and other resources essential for rebuilding.
             </p>
           </div>
         </div>

@@ -4,19 +4,29 @@ import History from './pages/History';
 import Causes from './pages/Causes';
 import Impact from './pages/Impact';
 import Solutions from './pages/Solutions';
+import Work_Cited from './pages/Work_Cited';
+import Links from './pages/Links';
 import './index.css';
 
 export default function App() {
   return (
     <Router>
       <nav className="main-nav">
-        {['Home', 'History', 'Causes', 'Impact', 'Solutions'].map(page => (
+        {[
+          { name: 'Home', path: '/' },
+          { name: 'History', path: '/history' },
+          { name: 'Causes', path: '/causes' },
+          { name: 'Impact', path: '/impact' },
+          { name: 'Solutions', path: '/solutions' },
+          { name: 'Links', path: '/links'},
+          { name: 'Work Cited', path: '/work-cited' } 
+        ].map(({ name, path }) => (
           <NavLink
-            key={page}
-            to={page === 'Home' ? '/' : `/${page.toLowerCase()}`}
+            key={name}
+            to={path}
             className={({ isActive }) => isActive ? 'nav-active' : ''}
           >
-            {page}
+            {name}
           </NavLink>
         ))}
       </nav>
@@ -27,6 +37,8 @@ export default function App() {
         <Route path="/causes" element={<Causes />} />
         <Route path="/impact" element={<Impact />} />
         <Route path="/solutions" element={<Solutions />} />
+        <Route path="/links" element={<Links/>} />
+        <Route path="/work-cited" element={<Work_Cited />} />
       </Routes>
 
       <footer className="footer">
