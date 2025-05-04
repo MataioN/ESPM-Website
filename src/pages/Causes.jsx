@@ -13,7 +13,8 @@ export default function Causes() {
         "Increased drought conditions in many regions",
         "Record-breaking heat waves that dry out vegetation",
         "Changes in wind patterns that can spread fires more quickly"
-      ]
+      ],
+   
     },
     {
       id: 2,
@@ -26,7 +27,8 @@ export default function Causes() {
         "Drought cycles that create extremely dry vegetation",
         "Low humidity conditions that make vegetation more flammable",
         "Santa Ana winds are a very primary cause for wildfire causes in Southern California"
-      ]
+      ],
+      
     },
     {
       id: 3,
@@ -38,7 +40,8 @@ export default function Causes() {
         "Reduced controlled burns and natural fire cycles",
         "Accumulation of dead trees and undergrowth that act as fuel",
         "Interrupted natural forest thinning processes"
-      ]
+      ],
+     
     },
     {
       id: 4,
@@ -51,7 +54,8 @@ export default function Causes() {
         "Power line failures during high wind events",
         "Arson and intentional fire setting",
         "Discarded cigarettes and other negligent behaviors"
-      ]
+      ],
+      
     },
     {
       id: 5,
@@ -63,7 +67,8 @@ export default function Causes() {
         "Agricultural practices and land clearing",
         "Road development providing access to previously remote areas",
         "Fragmentation of natural landscapes"
-      ]
+      ],
+      
     }
   ];
 
@@ -115,10 +120,41 @@ export default function Causes() {
                       <li key={index}>{factor}</li>
                     ))}
                   </ul>
+                  {cause.image && (
+                    <div className="causes-image">
+                      <img 
+                        src={cause.image} 
+                        alt={`Figure for ${cause.title}`} 
+                        className="rounded-md mt-4 shadow-md"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="global-figures-section mt-12">
+        <h3 className="section-title">Fire Trends & Climate</h3>
+        <div className="flex flex-col md:flex-row gap-6 mt-4">
+          <img 
+            src="/public/images/fire_freq.gif" 
+            alt="Wildfire frequency over time" 
+            className="rounded-lg w-full md:w-1/2 shadow"
+          />
+          <p>
+            Fire Ignition Patterns on a variety of different starters (Keeley).
+          </p>
+          <img 
+            src="/public/images/climate_change.gif" 
+            alt="Climate change impact on wildfire intensity" 
+            className="rounded-lg w-full md:w-1/2 shadow"
+          />
+          <p>
+            Shows how climate impacts fire burning such as in the north being tied to low winter precipitation and high spring temperatures. Also shows high correlation for climate variation being the cause of fires in the south as well (Keeley).
+          </p>
         </div>
       </section>
 

@@ -131,6 +131,9 @@ export default function Work_Cited() {
             <li>CalMatters. “California’s Fire-Hardening Mandate Takes Effect.” <i>CalMatters</i>, 11 Apr. 2025, https://calmatters.org/housing/2025/04/california-fire-home-hardening/.</li>
             <li>Office of Governor Gavin Newsom. “With Peak Fire Season on Horizon, California Launches Statewide Wildfire Preparedness Campaign.” <i>California Governor’s Office</i>, 7 Apr. 2025, https://www.gov.ca.gov/2025/04/07/with-peak-fire-season-on-horizon-california-launches-statewide-wildfire-preparedness-campaign/.</li>
             <li>AlertCalifornia. “AlertCalifornia and CAL FIRE’s Fire Detection AI Program Named One of TIME’s Best Inventions of 2023.” <i>AlertCalifornia</i>, University of California San Diego, 2023, https://alertcalifornia.org/alertcalifornia-and-cal-fires-fire-detection-ai-program-named-one-of-times-best-inventions-of-2023/.</li>
+            <li>Hernandez, Salvador. “5 Years Ago, Santiago Fire Scorched O.C.” Orange County Register, 22 Oct. 2012, www.ocregister.com/2012/10/22/5-years-ago-santiago-fire-scorched-oc/. Accessed 4 May 2025.</li>
+            <li>Gasdia-Cochrane, Marlene. “Are the Wildfires Causing Harmful Air Quality Issues?” Identifying Threats, Thermo Fisher Scientific, May 2023, www.thermofisher.com/blog/identifying-threats/are-the-wildfires-causing-harmful-air-quality-issues/. Accessed 4 May 2025.</li>
+            <li>Facebook, et al. “Explosive Fire Again Threatens Paradise, Town Devastated by California’s Deadliest Blaze.” Los Angeles Times, 9 Sept. 2020, www.latimes.com/california/story/2020-09-09/paradise-devastated-by-californias-deadliest-fire-again-threatened-by-new-blazes.</li>
           </ul>
         </section>
       </main>
