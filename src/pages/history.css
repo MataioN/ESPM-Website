@@ -107,11 +107,13 @@ body {
   .timeline-content {
     position: relative;
     background-color: #fff8eb;
-    padding: 1.8rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
     border-radius: 1rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
     width: 44%;
-    padding-bottom: 1rem;
     font-family: 'Merriweather', serif;
   }
   

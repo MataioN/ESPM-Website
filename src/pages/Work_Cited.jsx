@@ -2,9 +2,9 @@ import './work_cited.css';
 
 export default function Work_Cited() {
   const bibliography = [
-    "Murray, J., Thompson, K., & Nguyen, L. (2023). *Geospatial strategies for vegetation management in wildfire-prone zones*. Journal of Environmental Analytics.",
-    "Westerling, A. L., Hidalgo, H. G., Cayan, D. R., & Swetnam, T. W. (2004). *Climate and wildfire in California*. Science, 313(5789), 940–943.",
-    "Philson, R., Wagner, T., & Nawathe, A. (2021). *Urban planning and wildfire risk mitigation*. California Policy Review.",
+    'Murray, J., Thompson, K., & Nguyen, L. (2023). "Geospatial strategies for vegetation management in wildfire-prone zones". Journal of Environmental Analytics.',
+    'Westerling, A. L., Hidalgo, H. G., Cayan, D. R., & Swetnam, T. W. (2004). "Climate and wildfire in California". Science, 313(5789), 940–943.',
+    'Philson, R., Wagner, T., & Nawathe, A. (2021). "Urban planning and wildfire risk mitigation". California Policy Review.',
     'Keeley, Jon E., and Alexandra D. Syphard. "Large California wildfires: 2020 fires in historical context." Fire Ecology 17 (2021): 1-11.',
     'Philson, Conner S., Lauren Wagner, and Ria Nawathe. "Mitigating California wildfire impact through zoning and housing policy." Journal of Science Policy and Governance 18.1 (2021).',
     'Murray, Alan T., et al. "Developing effective wildfire risk mitigation plans for the wildland urban interface." International Journal of Applied Earth Observation and Geoinformation 124 (2023): 103531.',
@@ -49,6 +49,25 @@ export default function Work_Cited() {
     }
   ];
 
+  const history_citations = [
+    'Attebery, Russell. "California Recognition of Cultural Burns Can Right a Historic Wrong". CalMatters, 21 Sept. 2024. https://calmatters.org/commentary/2024/09/wildfire-cultural-burn-california-tribes',
+    '"Santiago Canyon Fire Incident Report". Wildland Firefighter Foundation, 2024. https://wffoundation.org/wp-content/uploads/2024/10/Santiago-Canyon-Final-v2.pdf',
+    '"1889 Fire."" OC Historyland, 2021. https://www.ochistoryland.com/1889fire',
+    '"The 1910 Fires". Forest History Society. https://foresthistory.org/research-explore/us-forest-service-history/policy-and-law/fire-u-s-forest-service/famous-fires/the-1910-fires',
+    '"Blazing Battles: The 1910 Fire and Its Legacy". National Forest Foundation. https://www.nationalforests.org/our-forests/light-and-seed-magazine/blazing-battles-the-1910-fire-and-its-legacy',
+    '"Smokey Bear". U.S. Forest Service. https://www.smokeybear.com/en/smokeys-history',
+    '"FIRESCOPE History". FIRESCOPE California. https://firescope.caloes.ca.gov/pages/history',
+    'Glaister, Dan. "500,000 Forced to Flee California Wildfires Driven by Winds" The Guardian, 24 Oct. 2007. https://www.theguardian.com/world/2007/oct/24/usa.danglaister1',
+    '"Camp Fire General Information". CAL FIRE. https://www.fire.ca.gov/incidents/2018/11/8/camp-fire',
+    'Westervelt, Eric, and Matthew S. Schwartz. "California Power Provider PG&E Files for Bankruptcy in Wake of Fire Lawsuits." NPR, 29 Jan. 2019. https://www.npr.org/2019/01/29/689591066/california-power-provider-pg-e-files-for-bankruptcy-in-wake-of-fire-lawsuits',
+    '"2020 Fire Season Summary." CAL FIRE. https://www.fire.ca.gov/incidents/2020',
+    'California, U.S. Forest Service Establish Shared Long-Term Strategy to Manage Forests and Rangelands. Office of Governor Gavin Newsom, 13 Aug. 2020. https://www.gov.ca.gov/2020/08/13/california-u-s-forest-service-establish-shared-long-term-strategy-to-manage-forests-and-rangelands',
+    'Baldassari, Erin. "In Fight Against Wildfires, California Turns to Prescribed Burns — and Trained Civilians." CalMatters, 18 Oct. 2023. https://calmatters.org/environment/wildfires/2023/10/california-wildfire-prescribed-burning-volunteers',
+    '"SB 310 Signed into Law". California Legislative Information, 2024. https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB310',
+    '"2025 Fire Season Incident Archive". CAL FIRE. https://www.fire.ca.gov/incidents/2025',
+    '"Devastating Scenes from Los Angeles as Multiple Wildfires Rage." Reuters, 8 Jan. 2025. https://www.reuters.com/pictures/devastating-scenes-los-angeles-multiple-wildfires-rage-2025-01-08',
+  ];
+
   return (
     <div className="cited-page">
       <header className="cited-header">
@@ -59,18 +78,7 @@ export default function Work_Cited() {
       </header>
 
       <main className="cited-content">
-        <section>
-          <h2 className="section-title">Bibliography</h2>
-          <ul className="bibliography-list">
-            {bibliography.map((entry, index) => (
-              <li key={index} className="bibliography-entry">
-                {entry}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
+      <section>
           <h2 className="section-title">Annotated Bibliography</h2>
           <ul className="annotated-list">
             {annotated.map((item, index) => (
@@ -84,6 +92,29 @@ export default function Work_Cited() {
             ))}
           </ul>
         </section>
+
+        <section>
+          <h2 className="section-title">Citations</h2>
+          <ul className="bibliography-list">
+            {bibliography.map((entry, index) => (
+              <li key={index} className="bibliography-entry">
+                {entry}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="section-title">History Page Citations</h2>
+          <ul className="bibliography-list">
+            {history_citations.map((entry, index) => (
+              <li key={index} className="bibliography-entry">
+                {entry}
+              </li>
+            ))}
+          </ul>
+        </section>
+
         <section className="image-sources">
           <h2>Image Sources</h2>
           <ul>

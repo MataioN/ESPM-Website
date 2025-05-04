@@ -73,13 +73,21 @@
   gap: 1.5rem;
 }
 
+.bibliography-list{
+  gap: 0.4rem;
+}
+
 .bibliography-entry {
   background: #ffffff;
   border-left: 5px solid #d2b48c;
-  padding: 1rem 1.25rem;
+  padding: 0.4rem 1.25rem;
   font-size: 1.05rem;
   line-height: 1.6;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin: 0.1rem auto;
+  text-align: left;
+  align-self: strech;
+  width: 100%;
 }
 
 /* Annotated Entries */
