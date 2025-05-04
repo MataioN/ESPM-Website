@@ -16,10 +16,9 @@ export default function Home() {
       {/* Info Section */}
       <section className="info">
         <div className="info-text">
-          <h2>Why Wildfire Awareness Matters</h2>
+          <h2>Wildfire Awareness</h2>
           <p>
-            We are dedicated to educating the public about wildfire risks, their consequences,
-            and how communities can work together to reduce them.
+            This project serves as a resource to raise awareness about the escalating wildfire crisis across California. Each section aims to inform viewers on an important part of the crisis and why it matters. Specifically, we focus on a timeline of wildfires and mitigation efforts in California, the causes and why wildfires are so prominent in California, their impact on communities, and potential solutions to lessen their effects and danger in the future. We hope to encourage a deeper understanding of this issue in order to help prevent as much harm as possible.
           </p>
         </div>
         <img src="/images/tree-fire.png" alt="Man near wildfire" className="info-img" />

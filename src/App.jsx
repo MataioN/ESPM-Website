@@ -42,11 +42,9 @@ export default function App() {
       </Routes>
 
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Southern California Wildfires. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} California Wildfire Crisis. All rights reserved.</p>
         <div className="footer-links">
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Donate</a>
+          <a href="https://github.com/MataioN/ESPM-Website" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </footer>
     </Router>
