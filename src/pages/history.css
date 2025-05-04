@@ -136,15 +136,18 @@
   }
   
   .timeline-content .tag {
-    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     background-color: #fbd5a6;
     color: #8b4513;
     font-size: 0.75rem;
     font-weight: bold;
     padding: 0.3rem 0.8rem;
     border-radius: 999px;
-    margin: 0;
+    z-index: 2;
   }
+  
   
   /* Dot and connector */
   .timeline-item::before {
