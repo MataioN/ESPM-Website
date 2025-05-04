@@ -1,0 +1,115 @@
+.cited-page {
+    font-family: 'Georgia', serif;
+    background-color: #fdf2e9;
+    color: #1a1a1a;
+    padding-bottom: 4rem;
+  }
+  
+  /* Header */
+  .cited-header {
+    position: relative;
+    width: 100%;
+    padding-top: calc(93.5% / 3);
+    background: url('/images/work-cited-header.png') center center no-repeat;
+    background-size: cover;
+    background-color: #fef3e7;
+  }
+  
+  .cited-header-content {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .cited-header h1 {
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0.75rem;
+  }
+  
+  .cited-header p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #f9f9f9;
+    max-width: 720px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Content Layout */
+  .cited-content {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d2b48c;
+    padding-bottom: 0.5rem;
+    color: #4a2f1c;
+  }
+  
+  /* Bibliography Entries */
+  .bibliography-list,
+  .annotated-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .bibliography-entry {
+    background: #ffffff;
+    border-left: 5px solid #d2b48c;
+    padding: 1rem 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Annotated Entries */
+  .annotated-entry {
+    background: #ffffff;
+    border-left: 5px solid #9b5723;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  }
+  
+  .annotated-citation {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .annotation {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cited-header h1 {
+      font-size: 2.25rem;
+    }
+  
+    .cited-header p {
+      font-size: 1rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
+  
