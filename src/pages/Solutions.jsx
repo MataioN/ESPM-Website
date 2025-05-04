@@ -5,72 +5,69 @@ export default function Solutions() {
   const sections = [
     {
       icon: <Leaf className="solution-icon" />,
-      title: "Vegetation Management & Fuel Reduction",
+      title: "Vegetation Management and Fuel Reduction",
       text: (
         <>
           <p>
-            Effective vegetation management is a cornerstone in mitigating wildfire risks, particularly in the wildland–urban interface (WUI) where human development meets natural landscapes. Techniques such as controlled burns, strategic thinning, and the creation of fuel breaks are instrumental in managing combustible materials. Murray et al. (2023) emphasize the application of geographic analytics to identify optimal areas for these interventions.
+            Wildland-urban interfaces, WUI, are areas where urban areas meet abruptly with natural landscape (Murray et al.). In such areas, vegetation management is a necessity to prevent wildfire risks. Methods like controlled burns, thinning of vegetation, and overall fuel reduction can help manage vegetation that serve as fuel for wildfires.
           </p>
           <p>
-            By analyzing factors like topography, climate, and vegetation density, land managers can prioritize regions that would benefit most from fuel reduction strategies, ensuring efficient allocation of resources and enhancing the effectiveness of wildfire mitigation efforts.
+            Murray et al. (2023) discuss the use of new technology and research to mitigate wildfire risk. By analyzing tons of raster cells, or small areas of split up land, the team is able to identify areas that are prioritized for vegetation treatment and fuel breaks. In the paper, the team demonstrates this method in the Santa Barbara region, showing its potential for preventing wildfire damage. Vegetation management practices must take into account efficient allocation of resources in order to increase effectiveness of wildfire mitigation efforts.
           </p>
           <p>
-            In Southern California, the Santa Ana winds significantly exacerbate wildfire risks by rapidly spreading fires through dry vegetation. Westerling et al. (2004) highlight that early control of wildfires is crucial, and managing the environment could have lessened the impact of the October 2003 wildfires. Integrating environmental management with an understanding of climatic factors like the Santa Ana winds is vital for effective wildfire mitigation.
+            Westerling et al. (2004) recognize that early control of wildfires is particularly important in the Santa Ana region, where strong winds increase spread of flames through dry vegetation. The research group says that managing the environment before the wildfire event could have stopped the October 2003 wildfires from being so detrimental. Understanding region specific climate factors such as high Santa Ana winds, and maintaining the environment through methods like fuel reduction is crucial for mitigating wildfires in the future.
           </p>
         </>
       ),
-      image: "/images/vegetation.png"
+      image: "/images/fuel-reduction.png"
     },
     {
       icon: <Home className="solution-icon" />,
-      title: "Fire-Resistant Building & Zoning Policy",
+      title: "Fire-Resistant Building and Zoning Policy",
       text: (
         <>
           <p>
-            The expansion of housing into high-risk fire zones has intensified wildfire impacts in California. Philson, Wagner, and Nawathe (2021) advocate for policy reforms that discourage development in these areas, promote urban upzoning to increase housing density in safer zones, and support retrofitting existing structures with fire-resistant materials.
+            Another factor that worsens wildfire impacts in California is the expansion of housing into specifically high risk zones. Philson, Wagner, and Nawathe (2021) discuss this issue and suggest policy reforms that discourage development in zones prone to wildfires. Instead, they propose policies to increase housing density in safer zones with urban upzoning, and support modernizing existing structures with fire-resistant material.
           </p>
           <p>
-            Implementing such policies can significantly reduce the vulnerability of communities to wildfires. By focusing on strategic land use planning and building codes, it's possible to create resilient communities better equipped to withstand wildfire events.
-          </p>
-          <p>
-            These policy recommendations are grounded in research that underscores the economic and human costs of wildfires. By aligning housing policies with wildfire risk assessments, California can mitigate future wildfire impacts and enhance community resilience.
+            The policy recommendations made by the group are supported by research that mainly prioritizes the economic and human costs of wildfires. By incorporating wildfire risk assessment into housing policies and focusing on community resilience, California can mitigate the effect of fires on communities.
           </p>
         </>
       ),
-      image: "/images/building.png"
+      image: "/images/firesafe-homes.png"
     },
     {
       icon: <Bell className="solution-icon" />,
-      title: "Early Detection & Rapid Response Systems",
+      title: "Early Detection and Rapid Response Systems",
       text: (
         <>
           <p>
-            Early detection of wildfires is vital for prompt response and containment. Advanced technologies, including remote sensing and real-time monitoring systems, enable authorities to identify and assess fire risks quickly. Murray et al. (2023) highlight the importance of integrating these technologies into wildfire risk mitigation plans, especially in the WUI.
+            Early detection of fires can make a huge difference in response time and containment. New, emerging technologies such as remote sensing and monitoring systems allow for quick assessment of fire risk.
           </p>
           <p>
-            By leveraging data from various sources, such as satellite imagery and ground-based sensors, emergency services can deploy resources more effectively, potentially preventing small fires from escalating into large-scale disasters. This proactive approach is crucial in areas where climatic conditions, like the Santa Ana winds, can rapidly transform minor ignitions into uncontrollable wildfires.
+            Murray et al. (2023) discuss this topic in the context of the WUI. Data from sources like satellite imagery, sensors on the ground, better equipped emergency services and resource management systems can prevent early, small fires from growing into larger disasters. In areas like Santa Ana, with powerful winds that can escalate wildfires very quickly, a quick response time,  early detection, and identifying prone areas early, can prevent large amounts of damage due to wildfires. 
           </p>
         </>
       ),
-      image: "/images/alert.png"
+      image: "/images/early-detect.png"
     },
     {
       icon: <AlertTriangle className="solution-icon" />,
-      title: "Community Preparedness & Public Education",
+      title: "Community Preparedness and Public Education",
       text: (
         <>
           <p>
-            Community engagement and education are essential components of wildfire resilience. Programs that inform residents about evacuation plans, defensible space creation, and emergency preparedness can significantly enhance a community's ability to respond to wildfires.
+            Arguably the best way to create wildfire resilience is through education and community involvement. Programs for evacuation plans and emergency preparedness can make the difference between a community's ability to respond and protect themselves from wildfires.
           </p>
           <p>
-            Collaborative efforts between local governments, organizations, and residents foster a culture of preparedness, ensuring that communities are not only aware of the risks but also equipped to take proactive measures in the face of wildfire threats.
+            When residents have resources and the correct knowledge to act, lives can be saved in the event of a wildfire and potential for human-caused ignition of wildfires can be reduced. Methods may include things like community workshops for information and resources and community planning in case of emergency.
           </p>
           <p>
-            Educational initiatives can include workshops, distribution of informational materials, and community drills. By empowering residents with knowledge and resources, communities can reduce the potential for human-caused ignitions and improve response times during wildfire events. This grassroots approach complements broader policy and technological strategies, creating a comprehensive framework for wildfire mitigation.
+            Efforts from government agencies, non-profit organizations, and projects like this one can help confirm that everyone is aware of wildfire risks and how to prevent them.
           </p>
         </>
       ),
-      image: "/images/community.png"
+      image: "/images/preparedness.png"
     }
   ];
 

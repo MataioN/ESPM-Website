@@ -12,7 +12,7 @@
   .solutions-header {
     position: relative;
     width: 100%;
-    padding-top: calc(93.5%/ 3);
+    padding-top: calc(93.5% / 3);
     background: url('/images/solutions-header.png') center center no-repeat;
     background-size: cover;
     background-color: #fef3e7;
@@ -69,7 +69,7 @@
     border: 1px solid #eee0d2;
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   }
   
   .solution-icon-wrapper {
@@ -109,7 +109,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     padding: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     overflow: visible;
     z-index: 1;
     transform-origin: center;
@@ -128,6 +128,7 @@
     margin-right: 0;
     max-width: 800px;
   }
+  
   
   .solution-stagger-text {
     flex: 1;
@@ -150,20 +151,21 @@
   
   /* Image outside the card */
   .solution-stagger-image {
-    width: 200px;
+    width: 320px;
     height: auto;
     border-radius: 12px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 0;
   }
   
   .solution-stagger.left .solution-stagger-image {
-    right: -300px;
+    right: -340px;
   }
   
   .solution-stagger.right .solution-stagger-image {
-    left: -300px;
+    left: -340px;
   }
   
   /* On hover: animate float */
@@ -171,7 +173,7 @@
     transform: translateY(-50%) scale(1.05);
     transition: transform 0.3s ease;
   }
-
+  
   /* Responsive Tweaks */
   @media (max-width: 768px) {
     .solutions-header h1 {
@@ -181,23 +183,30 @@
     .solutions-header p {
       font-size: 1rem;
     }
+  
     .solution-stagger {
-        flex-direction: column !important;
-        align-items: flex-start;
-        padding: 1.5rem;
+      flex-direction: column !important;
+      align-items: flex-start;
+      padding: 1.5rem;
     }
-    
+  
     .solution-stagger-image {
-        position: static;
-        transform: none;
-        width: 100%;
-        margin-top: 1rem;
+      position: static;
+      transform: none;
+      width: 100%;
+      margin-top: 1rem;
     }
-    
+  
     .solution-stagger.left .solution-stagger-image,
     .solution-stagger.right .solution-stagger-image {
-        left: auto;
-        right: auto;
+      left: auto;
+      right: auto;
+    }
+  
+    .solution-stagger.left,
+    .solution-stagger.right {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
   
