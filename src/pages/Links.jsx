@@ -5,20 +5,20 @@ export default function Links() {
     {
       title: 'CAL FIRE',
       url: 'https://www.fire.ca.gov/',
-      img: 'https://www.fire.ca.gov/wp-content/uploads/2020/11/logo-cal-fire-2020.png',
+      img: '/public/images/cal_fire_dep.png',
       description: 'California Department of Forestry and Fire Protection—provides up-to-date wildfire information, fire prevention tips, and emergency response details.'
     },
     {
       title: 'California Fire Map and Tracker',
       url: 'https://www.frontlinewildfire.com/california-wildfire-map/',
-      img: 'https://www.readyforwildfire.org/wp-content/uploads/2022/04/RFW-logo-horizontal.png',
-      description: 'An educational site to help residents prepare for wildfires and reduce risk through defensible space and emergency planning.'
+      img: '/public/images/frontline.jpg',
+      description: 'An educational site to help residents prepare for wildfires and reduce risk through defensible space and emergency planning. Also helps track current wildfires.'
     },
     {
-      title: 'National Interagency Fire Center',
-      url: 'https://www.nifc.gov/',
+      title: 'California Wildfire Recovery',
+      url: 'https://wildfirerecovery.caloes.ca.gov/',
       img: 'https://www.nifc.gov/themes/custom/nifc/logo.svg',
-      description: 'Coordinates wildland firefighting efforts across federal agencies and shares national incident updates and statistics.'
+      description: 'Resource to help prepare and respond to wildfires in California.'
     }
   ];
 
