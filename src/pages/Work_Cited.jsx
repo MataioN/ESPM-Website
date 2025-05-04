@@ -2,13 +2,18 @@ import './work_cited.css';
 
 export default function Work_Cited() {
   const bibliography = [
-    "Murray, J., Thompson, K., & Nguyen, L. (2023). *Geospatial strategies for vegetation management in wildfire-prone zones*. Journal of Environmental Analytics.",
-    "Westerling, A. L., Hidalgo, H. G., Cayan, D. R., & Swetnam, T. W. (2004). *Climate and wildfire in California*. Science, 313(5789), 940–943.",
-    "Philson, R., Wagner, T., & Nawathe, A. (2021). *Urban planning and wildfire risk mitigation*. California Policy Review.",
+    'Keeley, Jon E., and Alexandra D. Syphard. "Historical Patterns of Wildfire Ignition Sources in California Ecosystems." International Journal of Wildland Fire, vol. 27, no. 12, 2018, p. 781, https://doi.org/10.1071/wf18026.',
     'Keeley, Jon E., and Alexandra D. Syphard. "Large California wildfires: 2020 fires in historical context." Fire Ecology 17 (2021): 1-11.',
-    'Philson, Conner S., Lauren Wagner, and Ria Nawathe. "Mitigating California wildfire impact through zoning and housing policy." Journal of Science Policy and Governance 18.1 (2021).',
+    'Keeley, Jon E., and Paul H. Zedler. “Large, High-Intensity Fire Events in Southern California Shrublands: Debunking the Fine-Grain Age Patch Model.” Ecological Applications, vol. 19, no. 1, 1 Jan. 2009, pp. 69–94, https://doi.org/10.1890/08-0281.1.',
+    'Masri, Shahir, et al. “Assessing Perception of Wildfires and Related Impacts among Adult Residents of Southern California.” International Journal of Environmental Research and Public Health, vol. 20, no. 1, 1 Jan. 2023, p. 815, www.mdpi.com/1660-4601/20/1/815, https://doi.org/10.3390/ijerph20010815.',
     'Murray, Alan T., et al. "Developing effective wildfire risk mitigation plans for the wildland urban interface." International Journal of Applied Earth Observation and Geoinformation 124 (2023): 103531.',
+    "Murray, J., Thompson, K., & Nguyen, L. (2023). *Geospatial strategies for vegetation management in wildfire-prone zones*. Journal of Environmental Analytics.",
+    'Philson, Conner S., Lauren Wagner, and Ria Nawathe. "Mitigating California wildfire impact through zoning and housing policy." Journal of Science Policy and Governance 18.1 (2021).',
+    "Philson, R., Wagner, T., & Nawathe, A. (2021). *Urban planning and wildfire risk mitigation*. California Policy Review.",
+    "Westerling, A. L., Hidalgo, H. G., Cayan, D. R., & Swetnam, T. W. (2004). *Climate and wildfire in California*. Science, 313(5789), 940–943.",
+    'Westerling, Anthony L., et al. “Climate, Santa Ana Winds and Autumn Wildfires in Southern California.” Eos, Transactions American Geophysical Union, vol. 85, no. 31, 2004, p. 289, https://doi.org/10.1029/2004eo310001'
   ];
+
 
   const annotated = [
     {
