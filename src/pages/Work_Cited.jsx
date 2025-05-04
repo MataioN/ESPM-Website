@@ -84,6 +84,16 @@ export default function Work_Cited() {
             ))}
           </ul>
         </section>
+        <section className="image-sources">
+          <h2>Image Sources</h2>
+          <ul>
+            <li>Icons and background images created using Chatgpt and Sora.</li>
+            <li>Placer County. “Fuel Reduction Efforts.” <i>Placer County Government</i>, 2023, https://www.placer.ca.gov/7669/Fuel-Reduction-Efforts.</li>
+            <li>CalMatters. “California’s Fire-Hardening Mandate Takes Effect.” <i>CalMatters</i>, 11 Apr. 2025, https://calmatters.org/housing/2025/04/california-fire-home-hardening/.</li>
+            <li>Office of Governor Gavin Newsom. “With Peak Fire Season on Horizon, California Launches Statewide Wildfire Preparedness Campaign.” <i>California Governor’s Office</i>, 7 Apr. 2025, https://www.gov.ca.gov/2025/04/07/with-peak-fire-season-on-horizon-california-launches-statewide-wildfire-preparedness-campaign/.</li>
+            <li>AlertCalifornia. “AlertCalifornia and CAL FIRE’s Fire Detection AI Program Named One of TIME’s Best Inventions of 2023.” <i>AlertCalifornia</i>, University of California San Diego, 2023, https://alertcalifornia.org/alertcalifornia-and-cal-fires-fire-detection-ai-program-named-one-of-times-best-inventions-of-2023/.</li>
+          </ul>
+        </section>
       </main>
     </div>
   );
