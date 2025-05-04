@@ -4,7 +4,10 @@ export default function Work_Cited() {
   const bibliography = [
     "Murray, J., Thompson, K., & Nguyen, L. (2023). *Geospatial strategies for vegetation management in wildfire-prone zones*. Journal of Environmental Analytics.",
     "Westerling, A. L., Hidalgo, H. G., Cayan, D. R., & Swetnam, T. W. (2004). *Climate and wildfire in California*. Science, 313(5789), 940–943.",
-    "Philson, R., Wagner, T., & Nawathe, A. (2021). *Urban planning and wildfire risk mitigation*. California Policy Review."
+    "Philson, R., Wagner, T., & Nawathe, A. (2021). *Urban planning and wildfire risk mitigation*. California Policy Review.",
+    'Keeley, Jon E., and Alexandra D. Syphard. "Large California wildfires: 2020 fires in historical context." Fire Ecology 17 (2021): 1-11.',
+    'Philson, Conner S., Lauren Wagner, and Ria Nawathe. "Mitigating California wildfire impact through zoning and housing policy." Journal of Science Policy and Governance 18.1 (2021).',
+    'Murray, Alan T., et al. "Developing effective wildfire risk mitigation plans for the wildland urban interface." International Journal of Applied Earth Observation and Geoinformation 124 (2023): 103531.',
   ];
 
   const annotated = [
@@ -25,7 +28,24 @@ export default function Work_Cited() {
         "Masri, Shahir, et al. “Assessing Perception of Wildfires and Related Impacts among Adult Residents of Southern California.” International Journal of Environmental Research and Public Health, vol. 20, no. 1, 1 Jan. 2023, p. 815, www.mdpi.com/1660-4601/20/1/815, https://doi.org/10.3390/ijerph20010815",
       note:
         "‌This article starts with a brief introduction about what they hope to accomplish with their study which is to see what knowledge residents of Southern California have on wildfires. It then goes into a section on how they went about their study and how they got their data. It then quickly transitions into the results of their study. After that, it describes the results and goes into a discussion on what the data they acquired could mean. It ends with a conclusion that describes their hope that the study can help with policy making and help others make informed decisions in relation to wildfires. \n\nThis is an extremely useful article because the previous articles I have are more about data of what the wildfires cause. However, the data that this article brings is more about people's perspectives on wildfires which gives us an interesting take on what we can put on our website. The information is reliable as this is a peer reviewed article with the study being done by them. The goal of this source is to help people make informed decisions during wildfires. \n\nThis source is helpful towards our website because it gives us data on the knowledge that people have on wildfires. This allows us to tweak and edit things we want to put on our website in order to use this study and information to help make anyone who visits our site more informed on the topic so that the preventable parts of the damage that wildfires cause can be mitigated or prevented altogether. This source gives me more inspiration to put more helpful information on our website that I might not have known to put or thought of before. Overall, this is a very well documented article that helps fill in missing gaps of information for our website."
-
+    },
+    {
+      citation:
+        'Keeley, Jon E., and Alexandra D. Syphard. "Large California wildfires: 2020 fires in historical context." Fire Ecology 17 (2021): 1-11.',
+      note:
+        "In this article, Jon Keeley and Alexandra Syphard bring their fire ecology expertise to study the unprecedented scale of the 2020 wildfires. To do this, they look at the historical context of large wildfire events dating back to 1860. They argue that although wildfires in California are a new occurrence, the recent intensity, scale, and frequency of wildfire events is unparalleled. Keeley and Syphard emphasize the need for new fire management strategies, attributing this surge of wildfires to long periods of droughts and climate change.\n\nBeing a peer-reviewed, published article, this is a credible source for our understanding of the historical context of wildfires in California. The authors utilize historic levels of the Palmer Drought Severity Index (PDSI) to analyze the historic correlation between drought levels and fire occurrences. \n\nFor our project, the history webpage will likely get a lot of information from this source. The timeline included on our website in combination with sources like Keeley and Syphard’s will allow us to illustrate how past fire events compare to occurrences today, highlighting the escalating nature of fires in California."
+    },
+    {
+      citation:
+        'Keeley, Jon E., and Alexandra D. Syphard. "Large California wildfires: 2020 fires in historical context." Fire Ecology 17 (2021): 1-11.',
+      note:
+        "Authored by researchers at UCLA, this paper is a policy memo that addresses the intersection of California’s housing and wildfire crises, arguing that the expansion of housing projects into areas prone to fire has only worsened wildfire impact. The researchers state that California wildfires cost about 18 billion dollars annually in recent years. To mitigate large amounts of loss and damage in fire prone areas, the researchers propose a plan that consists of discontinuing development in high-risk fire zones, increasing government buyouts in said high-risk areas, increasing urban up-zoning to generate affordable housing, and increasing retrofitting of existing at-risk homes.\n\nThis paper stands out as a solution oriented approach towards addressing wildfires, proposing policy recommendations supported by research. Philson and his team provide a credible source for possible mitigation efforts that can be implemented to save lives and prevent economic loss in areas prone to wildfires.\n\nIn our project, this source is useful for our webpage on mitigation strategies and future outlook. It provides information and research on potential policies to prevent wildfires from having such a devastating effect on California communities."
+    },
+    {
+      citation:
+        'Murray, Alan T., et al. "Developing effective wildfire risk mitigation plans for the wildland urban interface." International Journal of Applied Earth Observation and Geoinformation 124 (2023): 103531.',
+      note:
+        "This journal written by Alan Murray and his team at UCSB discusses escalating wildfire risks in the wildland urban interface, which they define as areas in the transition zone between highly vegetated land and densely populated areas, particularly focusing on regions like California. By analyzing tons of raster cells, or small areas of split up land, the team is able to identify areas that are prioritized for mitigation through methods like vegetation treatment and fuel breaks. In the paper, the team demonstrates this method in the Santa Barbara region, showing its effectiveness in preventing wildfire damage.\n\nThis article stands out for its use of artificial intelligence in an effort to prevent wildfire damage. With a data-driven approach, the researchers are able to create a framework for efforts to prevent wildfire damage. The data provides the team with credibility.\n\nIn our project, this source is also useful for the webpage on mitigation strategies and future outlook. Unlike the policy based approach from annotation 2, this source focuses on data-driven approaches to provide insights on how to effectively plan and allocate resources for wildfire mitigation in high risk areas."
     }
   ];
 
@@ -34,7 +54,7 @@ export default function Work_Cited() {
       <header className="cited-header">
         <div className="cited-header-content">
           <h1>Works Cited</h1>
-          <p>References and research that shaped our project direction and insights.</p>
+          <p>References and research for this project</p>
         </div>
       </header>
 
