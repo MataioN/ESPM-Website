@@ -1,4 +1,7 @@
 /* Page background and header */
+body {
+  font-family: 'Merriweather', serif;
+}
 .history-page {
     font-family: 'Playfair Display', serif;
     background-color: #ffe8bf;
@@ -108,6 +111,8 @@
     border-radius: 1rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
     width: 44%;
+    padding-bottom: 1rem;
+    font-family: 'Merriweather', serif;
   }
   
   .timeline-item:nth-child(odd) .timeline-content {
@@ -127,6 +132,7 @@
     font-weight: bold;
     color: #4b2e2a;
     margin-bottom: 0.75rem;
+    font-family: 'Merriweather', serif;
   }
   
   .timeline-content p {
@@ -186,7 +192,7 @@
   .history-context {
     max-width: 1050px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #fff5e8;
     border-left: 6px solid #c7663c;
     border-radius: 0.5rem;

@@ -164,11 +164,7 @@ export default function History() {
       <section className="history-context">
         <h3>Historical Context</h3>
         <p>
-          California’s fire history reflects a shift from fire exclusion to adaptive management. Early Indigenous burning practices were outlawed,
-          leading to fuel build-up and larger, more destructive fires.
-        </p>
-        <p>
-          Today, policies focus on restoring ecological balance, investing in prevention, and adapting to climate change.
+          The timeline above shows a shift from an instrumentalist approach of fire exclusion to better management practices. Recent efforts are slowly leaning more towards an intersubjective approach, working with nature and understanding fires as necessary and inevitable in order to prevent damage. Into the future, we hope to see more legislation, agencies, activist groups, and research focused on adapting to climate change, ecological balance, investing in prevention, and adapting to climate change.
         </p>
       </section>
     </div>
