@@ -85,7 +85,7 @@ export default function Causes() {
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <div className="image-wrapper">
             <img 
-              src="/public/images/dead_trees.webp" 
+              src="/images/dead_trees.webp" 
               alt="Dry forest conditions" 
               className="rounded-lg"
             />
@@ -140,7 +140,7 @@ export default function Causes() {
         <h3 className="section-title">Fire Trends & Climate</h3>
         <div className="flex flex-col md:flex-row gap-6 mt-4">
           <img 
-            src="/public/images/fire_freq.gif" 
+            src="/images/fire_freq.gif" 
             alt="Wildfire frequency over time" 
             className="rounded-lg w-full md:w-1/2 shadow"
           />
@@ -148,7 +148,7 @@ export default function Causes() {
             Fire Ignition Patterns on a variety of different starters (Keeley).
           </p>
           <img 
-            src="/public/images/climate_change.gif" 
+            src="/images/climate_change.gif" 
             alt="Climate change impact on wildfire intensity" 
             className="rounded-lg w-full md:w-1/2 shadow"
           />

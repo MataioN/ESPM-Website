@@ -66,13 +66,13 @@ export default function Impact() {
       community: "Paradise, California",
       event: "Camp Fire (2018)",
       story: "The town of Paradise was almost completely destroyed, with over 11,000 homes lost. Three years later, only about 20% of residents had returned to rebuild.",
-      image: "/public/images/paradise.jpg"
+      image: "/images/paradise.jpg"
     },
     {
       community: "Santa Ana Mountains",
       event: "Santiago Canyon Fire (1889)",
       story: "Many conditions led up to this event, especially a more severe drought than usual and a very low amount of precipitation than usual. Santa Ana winds appeared as they commonly do and caused a 3-day wind event. This led to a lot of destruction as it burned over 300,000 acres of land and many farm fields were destroyed in this event as well.",
-      image: "/public/images/santiago.webp"
+      image: "/images/santiago.webp"
     },
   ];
 
@@ -87,7 +87,7 @@ export default function Impact() {
 
       <div className="flex-row">
         <div className="image-block" style={{ flex: 1 }}>
-          <img src="/public/images/community_affected_wildfire.jpg" alt="Community affected by wildfire" />
+          <img src="/images/community_affected_wildfire.jpg" alt="Community affected by wildfire" />
         </div>
         <div className="text-block" style={{ flex: 1 }}>
           <h3>The Human Cost</h3>

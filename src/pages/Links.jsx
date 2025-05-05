@@ -5,13 +5,13 @@ export default function Links() {
     {
       title: 'CAL FIRE',
       url: 'https://www.fire.ca.gov/',
-      img: '/public/images/cal_fire_dep.png',
+      img: '/images/cal_fire_dep.png',
       description: 'California Department of Forestry and Fire Protection—provides up-to-date wildfire information, fire prevention tips, and emergency response details.'
     },
     {
       title: 'California Fire Map and Tracker',
       url: 'https://www.frontlinewildfire.com/california-wildfire-map/',
-      img: '/public/images/frontline.jpg',
+      img: '/images/frontline.jpg',
       description: 'An educational site to help residents prepare for wildfires and reduce risk through defensible space and emergency planning. Also helps track current wildfires.'
     },
     {
