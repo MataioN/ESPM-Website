@@ -126,7 +126,11 @@ export default function Work_Cited() {
         <section className="image-sources">
           <h2>Image Sources</h2>
           <ul>
-            <li>Icons and background images created using Chatgpt and Sora.</li>
+            <li>“Create image” prompt. CHATGPT, GPT-4o, OpenAI, 24 April - 4 May 2025, chat.openai.com/chat.
+            </li>
+            <li>
+            “Create image prompt. CHATGPT, Sora, OpenAI, 2 May - 4 May 2025, https://sora.chatgpt.com.
+            </li>
             <li>Placer County. “Fuel Reduction Efforts.” <i>Placer County Government</i>, 2023, https://www.placer.ca.gov/7669/Fuel-Reduction-Efforts.</li>
             <li>CalMatters. “California’s Fire-Hardening Mandate Takes Effect.” <i>CalMatters</i>, 11 Apr. 2025, https://calmatters.org/housing/2025/04/california-fire-home-hardening/.</li>
             <li>Office of Governor Gavin Newsom. “With Peak Fire Season on Horizon, California Launches Statewide Wildfire Preparedness Campaign.” <i>California Governor’s Office</i>, 7 Apr. 2025, https://www.gov.ca.gov/2025/04/07/with-peak-fire-season-on-horizon-california-launches-statewide-wildfire-preparedness-campaign/.</li>
